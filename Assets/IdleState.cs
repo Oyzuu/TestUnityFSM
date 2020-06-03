@@ -12,18 +12,6 @@ public class IdleState : State {
         Debug.Log("Enter idle state");
     }
 
-    public override void Exit() {
-        base.Exit();
-    }
-
-    public override void PhysicsUpdate() {
-        base.PhysicsUpdate();
-    }
-
-    public override void LogicUpdate() {
-        base.LogicUpdate();
-    }
-
     public override void HandleInput() {
         base.HandleInput();
         var horizontalInput = Input.GetAxis("Horizontal");

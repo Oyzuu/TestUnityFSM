@@ -10,16 +10,8 @@ public class MoveState : State {
         Debug.Log("Enter move state");
     }
 
-    public override void Exit() {
-
-    }
-
     public override void PhysicsUpdate() {
         _player.Move(horizontal);
-    }
-
-    public override void LogicUpdate() {
-
     }
 
     public override void HandleInput() {
